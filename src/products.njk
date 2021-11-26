@@ -1,0 +1,14 @@
+---
+  title: Products
+  layout: 'base.njk'
+---
+
+<h1>
+  Product Page
+</h1>
+
+<div>
+  {%- for product in collections.product | reverse -%}
+    {% include 'product-snippet.njk' %}
+  {%- endfor -%}
+</div>
