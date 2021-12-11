@@ -423,7 +423,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.border, .border-4, .border-l-8 {
+.border, .border-4, .border-l-8, .border-t, .border-b-2, .hover\:border-b-2 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
@@ -508,6 +508,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100%;
 }
 
+.h-32 {
+  height: 8rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -581,6 +589,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: 35% 65%;
 }
 
+.grid-cols-\[40\%_60\%\] {
+  grid-template-columns: 40% 60%;
+}
+
+.grid-cols-\[50\%_50\%\] {
+  grid-template-columns: 50% 50%;
+}
+
+.grid-cols-\[45\%_55\%\] {
+  grid-template-columns: 45% 55%;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -645,6 +665,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-left-width: 8px;
 }
 
+.border-t {
+  border-top-width: 1px;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
 .border-accent {
   --tw-border-opacity: 1;
   border-color: rgb(149 50 80 / var(--tw-border-opacity));
@@ -668,6 +696,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-blue-500 {
   --tw-border-opacity: 1;
   border-color: rgb(59 130 246 / var(--tw-border-opacity));
+}
+
+.border-primary {
+  --tw-border-opacity: 1;
+  border-color: rgb(35 25 41 / var(--tw-border-opacity));
 }
 
 .bg-primary {
@@ -717,6 +750,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1.25rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .py-32 {
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -747,6 +784,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1.25rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .pl-10 {
   padding-left: 2.5rem;
 }
@@ -772,6 +814,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold {
@@ -908,12 +955,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   cursor: pointer;
 }
 
+.hover\:border-b-2:hover {
+  border-bottom-width: 2px;
+}
+
 .hover\:border-accent\/90:hover {
   border-color: rgb(149 50 80 / 0.9);
 }
 
 .hover\:border-secondary\/80:hover {
   border-color: rgb(235 235 239 / 0.8);
+}
+
+.hover\:border-accent:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(149 50 80 / var(--tw-border-opacity));
 }
 
 .hover\:bg-accent\/90:hover {
