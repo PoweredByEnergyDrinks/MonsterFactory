@@ -1,32 +1,54 @@
-<div class="pr-16 bg-no-repeat bg-cover min-h-fit bg-hero">
-  <header class="p-5">
-    <nav class="flex items-center gap-4 ml-64">
-      <a class="uppercase whitespace-nowrap" href="/">Monster Factory</a>
-      <a class="ml-auto hover:underline-offset-4 hover:underline-accent hover:underline" href="/">Home</a>
-      <a class="hover:underline-offset-4 hover:underline-accent hover:underline" href="/products">Products</a>
-      <a class="hover:underline-offset-4 hover:underline-accent hover:underline" href="/contact">Contact</a>
-    </nav>
-
-    <section class="max-w-xl py-32 mt-16 ml-64 space-y-5">
-
-      <h1 class="text-6xl font-bold text-accent">
-        Beautifully Crafted Prosthetic Makeup
+<div>
+  <header class="p-5 pr-24 bg-no-repeat bg-cover min-h-fit bg-hero">
+    {% include 'header.njk' %}
+    <section class="relative max-w-xl py-64 mt-16 ml-64">
+      <h1 class="mb-8 text-6xl font-bold text-accent">
+          Beautifully Crafted Prosthetic Makeup
       </h1>
-      
-      <h3 class="text-xl">Hi, I'm Jurine Erwee</h3>
-      
-      <p>With a widespread skillset in makeup artistry, I do everything from bodypainting all the way to glamour and high-fashion makeup. Specialising in makeup effects, I have worked on many productions and also supply prosthetics to the film industry, with a GIFA award under my belt, as well as being a 2021 Arnold Classic Bodypainting Winner!</p>
-      
-      <div class="flex items-center gap-5 mt-5">
-        <a href="/contact" 
-        class="px-3 py-2 border rounded select-none hover:cursor-pointer bg-accent border-accent hover:bg-accent/90 hover:border-accent/90 focus:outline focus:outline-accent focus:outline-offset-4 focus:outline-2">
-        Contact Me
+      <h3 class="mb-8 text-3xl">Hi, I'm Jurine Erwee</h3>
+      <p>
+        With a widespread skillset in makeup artistry, I do everything from bodypainting all the way to glamour and high-fashion
+        makeup. Specialising in makeup effects, I have worked on many productions and also supply prosthetics to the film
+        industry, with a GIFA award under my belt, as well as being a 2021 Arnold Classic Bodypainting Winner!
+      </p>
+      <div class="relative flex items-center gap-5 mt-16">
+        <a
+          href="/contact"
+          class="px-3 py-2 border rounded select-none hover:cursor-pointer bg-accent border-accent hover:bg-accent/90 hover:border-accent/90 focus:outline focus:outline-accent focus:outline-offset-4 focus:outline-2">
+          Contact Me
         </a>
-        <a href="/products" 
-        class="px-3 py-2 border rounded select-none hover:cursor-pointer border-secondary hover:border-secondary/80 focus:outline focus:outline-secondary focus:outline-offset-4 focus:outline-2">
-        View Products
+        <a
+          href="/products"
+          class="px-3 py-2 border rounded select-none hover:cursor-pointer border-secondary hover:border-secondary/80 focus:outline focus:outline-secondary focus:outline-offset-4 focus:outline-2">
+          View Products
         </a>
+        <div class="absolute flex gap-5 -left-32 flex-nowrap motion-safe:animate-point motion-reduce:animate-none">
+          <svg class="w-3" width="29" height="36" viewBox="0 0 29 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0 3.25575C0 0.640749 2.931 -0.904251 5.088 0.575749L26.592 15.3187C28.475 16.6087 28.475 19.3887 26.592 20.6787L5.088
+                35.4237C2.93 36.8997 0 35.3567 0 32.7427V3.25575Z"
+              fill="#EBEBEF"/>
+          </svg>
+          <svg class="w-3" width="29" height="36" viewBox="0 0 29 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0 3.25575C0 0.640749 2.931 -0.904251 5.088 0.575749L26.592 15.3187C28.475 16.6087 28.475 19.3887 26.592 20.6787L5.088
+                35.4237C2.93 36.8997 0 35.3567 0 32.7427V3.25575Z"
+              fill="#EBEBEF"/>
+          </svg>
+          <svg class="w-3" width="29" height="36" viewBox="0 0 29 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0 3.25575C0 0.640749 2.931 -0.904251 5.088 0.575749L26.592 15.3187C28.475 16.6087 28.475 19.3887 26.592 20.6787L5.088
+                35.4237C2.93 36.8997 0 35.3567 0 32.7427V3.25575Z"
+              fill="#EBEBEF"/>
+          </svg>
+        </div>
+      </div>
+      <div class="absolute flex items-center gap-16 flex-nowrap -bottom-32">
+        <div class="bg-feature-1 bg-cover bg-center bg-no-repeat w-48 aspect-[9/13]"></div>
+        <div class="bg-feature-2 bg-cover bg-center bg-no-repeat w-48 aspect-[9/13]"></div>
+        <div class="bg-feature-3 bg-cover bg-center bg-no-repeat w-48 aspect-[9/13]"></div>
       </div>
     </section>
   </header>
+  <div class="h-64 bg-secondary"></div>
 </div>
