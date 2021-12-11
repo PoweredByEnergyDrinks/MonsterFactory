@@ -9,10 +9,7 @@
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body class="min-h-screen bg-secondary text-secondary selection:text-secondary selection:bg-accent">
-      {% include "hero.njk" %}
-      <main>
-        {{ content | safe }}
-      </main>
+      {{ content | safe }}
       {% include "footer.njk" %}
     <script>
       if (window.netlifyIdentity) {
