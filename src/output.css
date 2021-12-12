@@ -471,6 +471,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
+.top-0 {
+  top: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.-top-\[20px\] {
+  top: -20px;
+}
+
+.-left-\[20px\] {
+  left: -20px;
+}
+
 .z-40 {
   z-index: 40;
 }
@@ -499,12 +515,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 4rem;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .aspect-\[9\/13\] {
@@ -515,12 +539,36 @@ Ensure the default browser behavior of the `hidden` attribute.
   aspect-ratio: 3 / 4;
 }
 
+.aspect-\[3\/7\] {
+  aspect-ratio: 3 / 7;
+}
+
+.aspect-\[7\/3\] {
+  aspect-ratio: 7 / 3;
+}
+
+.aspect-\[6\/3\] {
+  aspect-ratio: 6 / 3;
+}
+
 .h-full {
   height: 100%;
 }
 
 .h-64 {
   height: 16rem;
+}
+
+.h-\[300px\] {
+  height: 300px;
+}
+
+.h-\[400px\] {
+  height: 400px;
+}
+
+.h-48 {
+  height: 12rem;
 }
 
 .max-h-\[550px\] {
@@ -541,6 +589,24 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-full {
   width: 100%;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
+.w-36 {
+  width: 9rem;
+}
+
+.min-w-fit {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 
 .max-w-3xl {
@@ -572,6 +638,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .flex-nowrap {
@@ -696,6 +766,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('/assets/branding/service-3.png');
 }
 
+.from-indigo-500 {
+  --tw-gradient-from: #6366f1;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(99 102 241 / 0));
+}
+
+.from-primary\/60 {
+  --tw-gradient-from: rgb(35 25 41 / 0.6);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(35 25 41 / 0));
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -765,6 +845,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pl-32 {
   padding-left: 8rem;
+}
+
+.pl-24 {
+  padding-left: 6rem;
 }
 
 .text-center {
@@ -1021,5 +1105,285 @@ Ensure the default browser behavior of the `hidden` attribute.
   .motion-reduce\:animate-none {
     -webkit-animation: none;
             animation: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:-bottom-16 {
+    bottom: -4rem;
+  }
+
+  .md\:-bottom-48 {
+    bottom: -12rem;
+  }
+
+  .md\:mr-\[5\%\] {
+    margin-right: 5%;
+  }
+
+  .md\:ml-5 {
+    margin-left: 1.25rem;
+  }
+
+  .md\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
+  .md\:ml-16 {
+    margin-left: 4rem;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:grid-cols-\[20\%_80\%\] {
+    grid-template-columns: 20% 80%;
+  }
+
+  .md\:grid-cols-\[5\%_95\%\] {
+    grid-template-columns: 5% 95%;
+  }
+
+  .md\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .md\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
+  }
+
+  .md\:gap-4 {
+    gap: 1rem;
+  }
+
+  .md\:gap-16 {
+    gap: 4rem;
+  }
+
+  .md\:from-primary\/60 {
+    --tw-gradient-from: rgb(35 25 41 / 0.6);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(35 25 41 / 0));
+  }
+
+  .md\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .md\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .md\:pr-5 {
+    padding-right: 1.25rem;
+  }
+
+  .md\:pr-10 {
+    padding-right: 2.5rem;
+  }
+
+  .md\:before\:absolute::before {
+    content: var(--tw-content);
+    position: absolute;
+  }
+
+  .md\:before\:inset-0::before {
+    content: var(--tw-content);
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
+
+  .md\:before\:-z-10::before {
+    content: var(--tw-content);
+    z-index: -10;
+  }
+
+  .md\:before\:bg-primary::before {
+    content: var(--tw-content);
+    --tw-bg-opacity: 1;
+    background-color: rgb(35 25 41 / var(--tw-bg-opacity));
+  }
+
+  .md\:after\:absolute::after {
+    content: var(--tw-content);
+    position: absolute;
+  }
+
+  .md\:after\:inset-0::after {
+    content: var(--tw-content);
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
+
+  .md\:after\:bg-primary::after {
+    content: var(--tw-content);
+    --tw-bg-opacity: 1;
+    background-color: rgb(35 25 41 / var(--tw-bg-opacity));
+  }
+
+  .md\:after\:bg-primary\/10::after {
+    content: var(--tw-content);
+    background-color: rgb(35 25 41 / 0.1);
+  }
+
+  .md\:after\:bg-primary\/30::after {
+    content: var(--tw-content);
+    background-color: rgb(35 25 41 / 0.3);
+  }
+
+  .md\:after\:bg-primary\/50::after {
+    content: var(--tw-content);
+    background-color: rgb(35 25 41 / 0.5);
+  }
+
+  .md\:after\:bg-primary\/80::after {
+    content: var(--tw-content);
+    background-color: rgb(35 25 41 / 0.8);
+  }
+
+  .md\:after\:bg-primary\/60::after {
+    content: var(--tw-content);
+    background-color: rgb(35 25 41 / 0.6);
+  }
+
+  .md\:after\:bg-gradient-to-r::after {
+    content: var(--tw-content);
+    background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:-bottom-32 {
+    bottom: -8rem;
+  }
+
+  .lg\:mr-24 {
+    margin-right: 6rem;
+  }
+
+  .lg\:ml-16 {
+    margin-left: 4rem;
+  }
+
+  .lg\:ml-14 {
+    margin-left: 3.5rem;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:grid-cols-\[20\%_80\%\] {
+    grid-template-columns: 20% 80%;
+  }
+
+  .lg\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
+  .lg\:gap-2 {
+    gap: 0.5rem;
+  }
+
+  .lg\:gap-4 {
+    gap: 1rem;
+  }
+
+  .lg\:gap-16 {
+    gap: 4rem;
+  }
+
+  .lg\:bg-none {
+    background-image: none;
+  }
+
+  .lg\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .lg\:pr-24 {
+    padding-right: 6rem;
+  }
+
+  .lg\:pl-5 {
+    padding-left: 1.25rem;
+  }
+
+  .lg\:before\:bg-none::before {
+    content: var(--tw-content);
+    background-image: none;
+  }
+
+  .lg\:after\:bg-primary\/0::after {
+    content: var(--tw-content);
+    background-color: rgb(35 25 41 / 0);
+  }
+
+  .lg\:after\:bg-primary\/20::after {
+    content: var(--tw-content);
+    background-color: rgb(35 25 41 / 0.2);
+  }
+
+  .lg\:after\:bg-none::after {
+    content: var(--tw-content);
+    background-image: none;
+  }
+
+  .lg\:after\:bg-gradient-to-r::after {
+    content: var(--tw-content);
+    background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:visible {
+    visibility: visible;
+  }
+
+  .xl\:flex {
+    display: flex;
+  }
+
+  .xl\:grid-cols-\[35\%_65\%\] {
+    grid-template-columns: 35% 65%;
+  }
+
+  .xl\:gap-16 {
+    gap: 4rem;
+  }
+
+  .xl\:gap-8 {
+    gap: 2rem;
+  }
+
+  .xl\:from-primary\/0 {
+    --tw-gradient-from: rgb(35 25 41 / 0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(35 25 41 / 0));
+  }
+
+  .xl\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .xl\:after\:bg-primary\/0::after {
+    content: var(--tw-content);
+    background-color: rgb(35 25 41 / 0);
+  }
+
+  .xl\:after\:bg-gradient-to-r::after {
+    content: var(--tw-content);
+    background-image: linear-gradient(to right, var(--tw-gradient-stops));
   }
 }

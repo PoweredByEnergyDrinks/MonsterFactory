@@ -3,21 +3,21 @@ title : Monster Factory
 layout : 'base.njk'
 --- 
 <!-- hero -->
-<section class="grid min-h-screen grid-cols-[35%_65%] bg-no-repeat bg-hero">
+<section class="grid min-h-screen md:grid-cols-[5%_95%] lg:grid-cols-[20%_80%] xl:grid-cols-[35%_65%] bg-no-repeat bg-hero relative md:after:inset-0 md:after:absolute md:after:bg-gradient-to-r md:from-primary/60 xl:after:bg-gradient-to-r xl:from-primary/0">
   <aside class=""></aside>
-  <main class="py-5 pl-5 pr-24">
+  <main class="py-5 lg:pl-5 lg:pr-24 md:pr-10">
     {% include 'header.njk'%}
     <div class="flex flex-col justify-center h-full gap-8">
-      <h1 class="max-w-3xl text-6xl font-bold text-accent">
+      <h1 class="relative z-20 max-w-3xl text-6xl font-bold text-accent">
         Beautifully Crafted Prosthetic Makeup
       </h1>
-      <h3 class="text-3xl ">Hi, I'm Jurine Erwee</h3>
-      <p class="max-w-3xl">
+      <h3 class="relative z-20 text-3xl ">Hi, I'm Jurine Erwee</h3>
+      <p class="relative z-20 max-w-3xl">
         With a widespread skillset in makeup artistry, I do everything from bodypainting all the way to glamour and high-fashion
         makeup. Specialising in makeup effects, I have worked on many productions and also supply prosthetics to the film
         industry, with a GIFA award under my belt, as well as being a 2021 Arnold Classic Bodypainting Winner!
       </p>
-      <div class="relative flex items-center gap-5">
+      <div class="relative z-20 flex items-center gap-5">
         <a
           href="/contact"
           class="px-3 py-2 border rounded select-none hover:cursor-pointer bg-accent border-accent hover:bg-accent/90 hover:border-accent/90 focus:outline focus:outline-accent focus:outline-offset-4 focus:outline-2">
@@ -28,7 +28,9 @@ layout : 'base.njk'
           class="px-3 py-2 border rounded select-none hover:cursor-pointer border-secondary hover:border-secondary/80 focus:outline focus:outline-secondary focus:outline-offset-4 focus:outline-2">
           View Products
         </a>
-        <div class="absolute flex gap-5 -left-32 flex-nowrap motion-safe:animate-point motion-reduce:animate-none">
+
+        <!-- arrow -->
+        <div class="absolute gap-5 md:hidden lg:flex -left-32 flex-nowrap motion-safe:animate-point motion-reduce:animate-none">
           <svg class="w-3" width="29" height="36" viewBox="0 0 29 36" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M0 3.25575C0 0.640749 2.931 -0.904251 5.088 0.575749L26.592 15.3187C28.475 16.6087 28.475 19.3887 26.592 20.6787L5.088
@@ -48,12 +50,16 @@ layout : 'base.njk'
               fill="#EBEBEF"/>
           </svg>
         </div>
+        
       </div>
-      <div class="absolute z-40 flex items-center gap-16 flex-nowrap -bottom-32">
+
+      <!-- featured -->
+      <div class="absolute z-40 flex items-center md:gap-16 md:justify-center flex-nowrap lg:-bottom-32 md:-bottom-48">
         <div class="bg-feature-1 bg-cover bg-center bg-no-repeat w-48 aspect-[9/13]"></div>
         <div class="bg-feature-2 bg-cover bg-center bg-no-repeat w-48 aspect-[9/13]"></div>
         <div class="bg-feature-3 bg-cover bg-center bg-no-repeat w-48 aspect-[9/13]"></div>
       </div>
+      
     </div>
   </main>
 </section>
@@ -69,14 +75,16 @@ layout : 'base.njk'
     <rect x="53" width="20" height="282" fill="#953251"/>
     <rect width="20" height="282" fill="#953251"/>
   </svg>  
-  <div class="relative flex flex-col items-center gap-32 py-32 px-5 ml-16 z-20 bg-primary before:absolute before:bg-accent
-  before:h-48 before:w-48 before:-top-[20px] before:-left-[20px] before:block after:absolute after:bg-primary after:h-48
-  after:w-48 after:top-0 after:left-0 after:block">
-    <div class="flex flex-col gap-32 ml-14">
+  <div class="relative z-20 flex flex-col items-center gap-32 px-5 py-32 ml-16 lg:pr-24 bg-primary ">
+    <svg class="absolute -top-[20px] -left-[20px]" width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M20 -1.1365e-05L150 0L150 20L20 20L20 150L0 150L1.1365e-05 20L1.31134e-05 -1.31134e-05L20 -1.1365e-05Z" fill="#953251"/>
+    </svg>
+    
+    <div class="flex flex-col gap-32 lg:ml-14 md:px-5">
 
       <div class="flex flex-row items-center gap-8">
         <a href="https://www.imdb.com/title/tt12987950/" target="_blank">
-          <img class="cursor-pointer hover:scale-105 hover:transition" src="/assets/branding/poster-dust.jpg" alt="dust poster">
+          <img class="h-48 cursor-pointer min-w-fit hover:scale-105 hover:transition" src="/assets/branding/poster-dust.jpg" alt="dust poster">
         </a>
         <div class="flex flex-col max-w-3xl gap-3 pl-10 border-l-8 border-accent">
           <h3 class="text-xl uppercase text-accent">Featured Project</h3>
@@ -102,7 +110,7 @@ layout : 'base.njk'
       
       <div class="flex flex-row items-center gap-8">
         <a href="https://www.imdb.com/title/tt5743796/" target="_blank">
-          <img class="cursor-pointer hover:scale-105 hover:transition" src="/assets/branding/poster-warrior.jpg" alt="warrior poster">
+          <img class="h-48 cursor-pointer min-w-fit hover:scale-105 hover:transition" src="/assets/branding/poster-warrior.jpg" alt="warrior poster">
         </a>
         <div class="flex flex-col max-w-3xl gap-3 pl-10 border-l-8 border-accent">
           <h3 class="text-xl uppercase text-accent">Featured Project</h3>
@@ -127,7 +135,7 @@ layout : 'base.njk'
 
       <div class="flex flex-row items-center gap-8">
         <a href="https://www.imdb.com/title/tt10498460/" target="_blank">
-          <img class="cursor-pointer hover:scale-105 hover:transition" src="/assets/branding/poster-lifes-a-drag.jpg" alt="warrior poster">
+          <img class="h-48 cursor-pointer min-w-fit hover:scale-105 hover:transition" src="/assets/branding/poster-lifes-a-drag.jpg" alt="warrior poster">
         </a>
         <div class="flex flex-col max-w-3xl gap-3 pl-10 border-l-8 border-accent">
           <h3 class="text-xl uppercase text-accent">Featured Project</h3>
@@ -155,28 +163,28 @@ layout : 'base.njk'
 
 <!-- services -->
 <section class="bg-secondary">
-  <div class="relative flex flex-col gap-5 py-16 pl-32 ml-16">
-    <svg class="z-30 absolute -top-[150px]" width="100" height="300" viewBox="0 0 126 282" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <div class="relative flex flex-col gap-5 py-16">
+    <svg class="z-30 absolute right-24 -top-[150px]" width="100" height="300" viewBox="0 0 126 282" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect x="106" width="20" height="282" fill="#953251"/>
       <rect x="53" width="20" height="282" fill="#953251"/>
       <rect width="20" height="282" fill="#953251"/>
       </svg>      
-    <h1 class="mt-16 text-6xl text-accent">Services</h1>
-    <div class="flex items-start gap-16 px-32 py-16">
-      <div class="max-h-[550px] flex flex-col items-center justify-center gap-5 p-16 text-center bg-center bg-no-repeat bg-cover aspect-[3/4] bg-service-1">
+    <h1 class="mt-16 text-6xl lg:ml-16 text-accent md:ml-16">Services</h1>
+    <div class="flex items-start py-16 md:px-16 md:gap-4 md:flex-wrap lg:flex-nowrap lg:gap-4 xl:gap-8 lg:px-16 xl:px-32">
+      <div class="h-[400px] flex flex-col items-center justify-center gap-5 p-16 text-center bg-center bg-no-repeat bg-cover bg-service-1">
         <h3 class="text-3xl font-bold">Beauty</h3>
         <p>High-fashion and glamour looks for photoshoots, matric dances, HD makeup for film and television, and many more beauty services are available to make your shoot or day special.</p>
       </div>
-      <div class="max-h-[550px] flex flex-col items-center justify-center gap-5 p-16 text-center bg-center bg-no-repeat bg-cover aspect-[3/4] bg-service-2">
+      <div class="h-[400px] flex flex-col items-center justify-center gap-5 p-16 text-center bg-center bg-no-repeat bg-cover bg-service-2">
         <h3 class="text-3xl font-bold">FX</h3>
         <p>Custom-made prosthetics, bodypainting, lifecasting, practical effects, masks, theater makeup and SFX makeup looks are just some of the many things I can do in this category.</p>
       </div>
-      <div class="max-h-[550px] flex flex-col items-center justify-center gap-5 p-16 text-center bg-center bg-no-repeat bg-cover aspect-[3/4] bg-service-3">
+      <div class="h-[400px] flex flex-col items-center justify-center gap-5 p-16 text-center bg-center bg-no-repeat bg-cover bg-service-3">
         <h3 class="text-3xl font-bold">Workshops</h3>
         <p>I can provide one-on-one classes, group classes as well as demos at conventions, parties, events, schools, and much more. Keep an eye out on my social media pages for dates on special workshops.</p>
       </div>
-      <svg class="absolute bottom-0 right-0" width="282" height="282" viewBox="0 0 282 282" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M262 282H0V262H262V0H282V262V282H262Z" fill="#953251"/>
+      <svg class="absolute bottom-0 right-0" width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M130 150L2.62268e-05 150L2.27299e-05 130L130 130L130 -2.27299e-05L150 -2.62268e-05L150 130L150 150L130 150Z" fill="#953251"/>
       </svg>
     </div>
   </div>
