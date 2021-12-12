@@ -30,6 +30,10 @@ module.exports = {
             'animation-timing-function': 'cubic-bezier(0, 0, 0.2, 1)'
           }
         }
+      },
+      screens: {
+        'xs': '360px',
+        // => @media (min-width: 360px) { ... }
       }
     }
   },
