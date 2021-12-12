@@ -2,6 +2,7 @@
 title : Monster Factory
 layout : 'base.njk'
 --- 
+<!-- hero -->
 <section class="grid min-h-screen grid-cols-[35%_65%] bg-no-repeat bg-hero">
   <aside class=""></aside>
   <main class="py-5 pl-5 pr-24">
@@ -57,9 +58,11 @@ layout : 'base.njk'
   </main>
 </section>
 
+<!-- divider -->
 <section class="relative h-64 bg-secondary"> 
 </section>
 
+<!-- work -->
 <section class="relative bg-secondary">
   <svg class="z-30 absolute right-24 -top-[150px]" width="100" height="300" viewBox="0 0 126 282" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect x="106" width="20" height="282" fill="#953251"/>
@@ -70,61 +73,87 @@ layout : 'base.njk'
   before:h-48 before:w-48 before:-top-[20px] before:-left-[20px] before:block after:absolute after:bg-primary after:h-48
   after:w-48 after:top-0 after:left-0 after:block">
     <div class="flex flex-col gap-32 ml-14">
-      <div class="flex flex-col max-w-3xl gap-3 pl-10 border-l-8 border-accent">
-        <h3 class="text-xl uppercase text-accent">Featured Project</h3>
-        <h1 class="text-3xl">Dust</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad mollitia, provident, pariatur, nisi quo excepturi eos
-          cupiditate voluptatem quis recusandae libero eum rerum. Eaque ad quisquam assumenda alias reiciendis aliquam?</p>
-        <a
-          href="/"
-          class="flex items-center gap-3 px-3 ml-auto border rounded select-none flex-nowrap hover:cursor-pointer bg-accent border-accent hover:bg-accent/90 hover:border-accent/90 focus:outline focus:outline-accent focus:outline-offset-4 focus:outline-2">
-          Watch Trailer
-          <svg class="w-3" width="29" height="36" viewBox="0 0 29 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M0 3.25575C0 0.640749 2.931 -0.904251 5.088 0.575749L26.592 15.3187C28.475 16.6087 28.475 19.3887 26.592 20.6787L5.088
-                35.4237C2.93 36.8997 0 35.3567 0 32.7427V3.25575Z"
-              fill="#EBEBEF"/>
-          </svg>
+
+      <div class="flex flex-row items-center gap-8">
+        <a href="https://www.imdb.com/title/tt12987950/" target="_blank">
+          <img class="cursor-pointer hover:scale-105 hover:transition" src="/assets/branding/poster-dust.jpg" alt="dust poster">
         </a>
+        <div class="flex flex-col max-w-3xl gap-3 pl-10 border-l-8 border-accent">
+          <h3 class="text-xl uppercase text-accent">Featured Project</h3>
+          <a href="https://www.imdb.com/title/tt12987950/" target="_blank">
+            <h1 class="text-3xl">Dust</h1>
+          </a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad mollitia, provident, pariatur, nisi quo excepturi eos
+            cupiditate voluptatem quis recusandae libero eum rerum. Eaque ad quisquam assumenda alias reiciendis aliquam?</p>
+          <a
+            href="https://www.youtube.com/watch?v=sswbuIGAZFg"
+            target="_blank"
+            class="flex items-center gap-3 px-3 ml-auto border rounded select-none flex-nowrap hover:cursor-pointer bg-accent border-accent hover:bg-accent/90 hover:border-accent/90 focus:outline focus:outline-accent focus:outline-offset-4 focus:outline-2">
+            Watch Trailer
+            <svg class="w-3" width="29" height="36" viewBox="0 0 29 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 3.25575C0 0.640749 2.931 -0.904251 5.088 0.575749L26.592 15.3187C28.475 16.6087 28.475 19.3887 26.592 20.6787L5.088
+                  35.4237C2.93 36.8997 0 35.3567 0 32.7427V3.25575Z"
+                fill="#EBEBEF"/>
+            </svg>
+          </a>
+        </div>
       </div>
-      <div class="flex flex-col max-w-3xl gap-3 pl-10 border-l-8 border-accent">
-        <h3 class="text-xl uppercase text-accent">Featured Project</h3>
-        <h1 class="text-3xl">Warrior</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad mollitia, provident, pariatur, nisi quo excepturi eos
-          cupiditate voluptatem quis recusandae libero eum rerum. Eaque ad quisquam assumenda alias reiciendis aliquam?</p>
-        <a
-          href="/"
-          class="flex items-center gap-3 px-3 ml-auto border rounded select-none flex-nowrap hover:cursor-pointer bg-accent border-accent hover:bg-accent/90 hover:border-accent/90 focus:outline focus:outline-accent focus:outline-offset-4 focus:outline-2">
-          Watch Trailer
-          <svg class="w-3" width="29" height="36" viewBox="0 0 29 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M0 3.25575C0 0.640749 2.931 -0.904251 5.088 0.575749L26.592 15.3187C28.475 16.6087 28.475 19.3887 26.592 20.6787L5.088
-                35.4237C2.93 36.8997 0 35.3567 0 32.7427V3.25575Z"
-              fill="#EBEBEF"/>
-          </svg>
+      
+      <div class="flex flex-row items-center gap-8">
+        <a href="https://www.imdb.com/title/tt5743796/" target="_blank">
+          <img class="cursor-pointer hover:scale-105 hover:transition" src="/assets/branding/poster-warrior.jpg" alt="warrior poster">
         </a>
+        <div class="flex flex-col max-w-3xl gap-3 pl-10 border-l-8 border-accent">
+          <h3 class="text-xl uppercase text-accent">Featured Project</h3>
+          <a href="https://www.imdb.com/title/tt5743796/" target="_blank">
+            <h1 class="text-3xl">Warrior</h1>
+          </a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad mollitia, provident, pariatur, nisi quo excepturi eos
+            cupiditate voluptatem quis recusandae libero eum rerum. Eaque ad quisquam assumenda alias reiciendis aliquam?</p>
+            <a
+            href="https://www.youtube.com/watch?v=V_wSj_1fWtY" target="_blank"
+            class="flex items-center gap-3 px-3 ml-auto border rounded select-none flex-nowrap hover:cursor-pointer bg-accent border-accent hover:bg-accent/90 hover:border-accent/90 focus:outline focus:outline-accent focus:outline-offset-4 focus:outline-2">
+            Watch Trailer
+            <svg class="w-3" width="29" height="36" viewBox="0 0 29 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+              d="M0 3.25575C0 0.640749 2.931 -0.904251 5.088 0.575749L26.592 15.3187C28.475 16.6087 28.475 19.3887 26.592 20.6787L5.088
+              35.4237C2.93 36.8997 0 35.3567 0 32.7427V3.25575Z"
+              fill="#EBEBEF"/>
+            </svg>
+          </a>
+        </div>
       </div>
-      <div class="flex flex-col max-w-3xl gap-3 pl-10 border-l-8 border-accent">
-        <h3 class="text-xl uppercase text-accent">Featured Project</h3>
-        <h1 class="text-3xl">Life’s a Drag</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad mollitia, provident, pariatur, nisi quo excepturi eos
-          cupiditate voluptatem quis recusandae libero eum rerum. Eaque ad quisquam assumenda alias reiciendis aliquam?</p>
-        <a
-          href="/"
-          class="flex items-center gap-3 px-3 ml-auto border rounded select-none flex-nowrap hover:cursor-pointer bg-accent border-accent hover:bg-accent/90 hover:border-accent/90 focus:outline focus:outline-accent focus:outline-offset-4 focus:outline-2">
-          Watch Trailer
-          <svg class="w-3" width="29" height="36" viewBox="0 0 29 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M0 3.25575C0 0.640749 2.931 -0.904251 5.088 0.575749L26.592 15.3187C28.475 16.6087 28.475 19.3887 26.592 20.6787L5.088
-                35.4237C2.93 36.8997 0 35.3567 0 32.7427V3.25575Z"
-              fill="#EBEBEF"/>
-          </svg>
+
+      <div class="flex flex-row items-center gap-8">
+        <a href="https://www.imdb.com/title/tt10498460/" target="_blank">
+          <img class="cursor-pointer hover:scale-105 hover:transition" src="/assets/branding/poster-lifes-a-drag.jpg" alt="warrior poster">
         </a>
+        <div class="flex flex-col max-w-3xl gap-3 pl-10 border-l-8 border-accent">
+          <h3 class="text-xl uppercase text-accent">Featured Project</h3>
+          <a href="https://www.imdb.com/title/tt10498460/" target="_blank">
+            <h1 class="text-3xl">Life’s a Drag</h1>
+          </a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad mollitia, provident, pariatur, nisi quo excepturi eos
+            cupiditate voluptatem quis recusandae libero eum rerum. Eaque ad quisquam assumenda alias reiciendis aliquam?</p>
+          <a
+            href="https://www.youtube.com/watch?v=L6D_zeyIfMU" target="_blank"
+            class="flex items-center gap-3 px-3 ml-auto border rounded select-none flex-nowrap hover:cursor-pointer bg-accent border-accent hover:bg-accent/90 hover:border-accent/90 focus:outline focus:outline-accent focus:outline-offset-4 focus:outline-2">
+            Watch Trailer
+            <svg class="w-3" width="29" height="36" viewBox="0 0 29 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 3.25575C0 0.640749 2.931 -0.904251 5.088 0.575749L26.592 15.3187C28.475 16.6087 28.475 19.3887 26.592 20.6787L5.088
+                  35.4237C2.93 36.8997 0 35.3567 0 32.7427V3.25575Z"
+                fill="#EBEBEF"/>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- services -->
 <section class="bg-secondary">
   <div class="relative flex flex-col gap-5 py-16 pl-32 ml-16">
     <svg class="z-30 absolute -top-[150px]" width="100" height="300" viewBox="0 0 126 282" fill="none" xmlns="http://www.w3.org/2000/svg">
